@@ -230,6 +230,7 @@ border: 3px solid white;
 #rleft p{
     text-align:start;
     margin-left:5%;
+    font-size:10px;
 }
 
 p span{
@@ -450,7 +451,7 @@ p span{
 }
 
 #left #skills img{
-    height: 80px;
+    height: 50px;
 }
 
 #left #skills2{
@@ -460,7 +461,7 @@ p span{
 }
 
 #left #skills2 img{
-    height: 80px;
+    height: 50px;
 }
 
 #left #skills3{
@@ -470,7 +471,7 @@ p span{
 }
 
 #left #skills3 img{
-    height: 80px;
+    height: 50px;
 }
 
 #left #skills4{
@@ -480,7 +481,7 @@ p span{
 }
 
 #left #skills4 img{
-    height: 80px;
+    height: 50px;
 }
 
 
@@ -670,10 +671,14 @@ gap: 5vw;
     font-size:7vw;
 }
 
+#text #btn{
+    padding-left:10%;
+}
+
 #text button{
     font-size:1.2rem;
-    margin-left:10vw;
-    gap: 0;
+    margin-left:15vw;
+    gap:2%;
     padding:3vw;
 }
 

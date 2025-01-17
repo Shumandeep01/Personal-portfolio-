@@ -124,9 +124,13 @@ span{
     color: white;
 }
 
-#text button{
-font-size:2rem;
-padding: 2%;
+#text #btn{
+    display: flex;
+}
+
+#text #btn button{
+font-size:1.2rem;
+padding: 4%;
 margin-top:3vh;
 margin-left:2.5vw;
 border: none;

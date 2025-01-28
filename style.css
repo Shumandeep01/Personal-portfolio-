@@ -264,6 +264,7 @@ p span{
     width: 100vw;
     height: 100vh;
     background-color: rgb(1, 23, 60);
+    white-space: nowrap;
 }
 
 #pg3 #pg3tag{
@@ -293,56 +294,38 @@ p span{
 #pg3 #project{
     width: 100vw;
     height: calc(100vh - 23vh);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     padding-right:1vw;
+    white-space:nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+#project::-webkit-scrollbar{
+    display: none;
 }
 
-#project #p1{
-    height: 55vh;
-    width: 30vw;
-    overflow: hidden;
-}
-
-#p1 #p1img{
-    width: 100%;
-    height:85%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 20px 20px 60px rgba(255, 255, 255, 0.29),inset -20px -20px 60px rgba(255, 255, 255, 0.23);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-#p1img img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-#p1 #p1link{
-    width: 100%;
-    height:15%;
-    background-color: crimson;
-    box-shadow: 20px 20px 60px rgba(255, 255, 255, 0.29),inset -20px -20px 60px rgba(255, 255, 255, 0.23);
-    border-radius: 10px;
-    border: 3px solid rgb(255, 255, 255);
-    border-top: none;
-}
 
 #project #p2{
     height: 55vh;
-    width: 30vw;
+    width: 40vw;
+    overflow: hidden;
+    display: inline-block;
+    border-radius:2%;
+    margin-left: 3%;
+    margin-right: 1%;
+    margin-top: 5%;
+    border:3px solid orangered ;
+}
+
+#p2 #oapcity{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.2;
 }
 
 #p2 #p2img{
     width: 100%;
     height:85%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 20px 20px 60px rgba(255, 255, 255, 0.29),inset -20px -20px 60px rgba(255, 255, 255, 0.23);
-    border-radius: 10px;
-    border: 4px solid crimson;
     overflow: hidden;
 }
 
@@ -356,45 +339,29 @@ p span{
 #p2 #p2link{
     width: 100%;
     height:15%;
-    background-color:crimson;
-    box-shadow: 20px 20px 60px rgba(255, 255, 255, 0.29),inset -20px -20px 60px rgba(255, 255, 255, 0.23);
-    border-radius: 10px;
-    border: 3px solid rgb(255, 255, 255);
-    border-top: none;
+    background-color:rgb(0, 0, 0);
+    border-top: 3px solid orangered ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#p2link a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    background-color: white;
+    padding:1px;
+    border-radius: 50%;
+}
+
+#p2link a:hover{
+    color: gray;
 }
 
 
-#project #p3{
-    height: 55vh;
-    width: 30vw;
-}
 
-#p3 #p3img{
-    width: 100%;
-    height:85%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 20px 20px 60px rgba(255, 255, 255, 0.29),inset -20px -20px 60px rgba(255, 255, 255, 0.23);
-    border-radius: 10px;
-    border: 4px solid crimson;
-    overflow: hidden;
-}
-
-#p3img img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-#p3 #p3link{
-    width: 100%;
-    height:15%;
-    background-color: crimson;
-    box-shadow: 20px 20px 60px rgba(255, 255, 255, 0.29),inset -20px -20px 60px rgba(255, 255, 255, 0.23);
-    border-radius: 10px;
-    border: 3px solid rgb(255, 255, 255);
-    border-top: none;
-}
 
 #pg4{
     width: 100vw;
@@ -790,7 +757,7 @@ p span{
 
 #project #p1{
     width: 85vw;
-    height:30%;
+    height:80%;
 }
 
 #project #p2{
